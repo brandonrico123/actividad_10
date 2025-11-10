@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convertidor de Divisas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Convertidor de Divisas</h1>
+
+    <form id="formFX">
+      <label for="monto">Cantidad</label>
+      <input id="monto" type="number" step="0.01" placeholder="0.00" required>
+
+      <label for="desde">Desde</label>
+      <select id="desde"></select>
+
+      <label for="hacia">Hacia</label>
+      <select id="hacia"></select>
+
+      <label for="decimales">Decimales</label>
+      <select id="decimales">
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <button type="submit">Convertir</button>
+    </form>
+
+    <section class="salida">
+      <p id="ruta">—</p>
+      <p id="resultado">—</p>
+      <p id="tasa">—</p>
+    </section>
+  </main>
+
+  <script src="javaScript/script.js"></script>
+</body>
+</html>
